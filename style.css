@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .header-container {
+    background: url('./assets/img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+  .logo {
+    background-image: url('./assets/svg/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;  
+    transition: 0.3s;
+  }
+  .logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+  }
