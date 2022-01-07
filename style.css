@@ -1,8 +1,24 @@
-* {
+@font-face {
+  font-family: 'Inter';
+  src:url("assets/fonts/Inter.ttf");
+  font-weight: 400 ;
+}
+@font-face {
+  font-family: 'Inter';
+  src:url("assets/fonts/Inter.ttf");
+  font-weight: 700 ;
+}
+@font-face {
+  font-family: 'Merriweather', serif;
+  src:url("assets/fonts/Merriweather-Regular.ttf");
+  font-weight: 700;
+}
+
+ * {
     box-sizing: border-box;
   }
 
-  .header-container {
+ .header-container {
     background: url('./assets/img/bg.png');
     background-repeat: no-repeat;
     background-position: center 0;
@@ -21,7 +37,7 @@
     transition: 0.3s;
   }
   
-  .logo:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-      contrast(87%);
+ .logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
   }
