@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'Inter';
-  src:url("assets/fonts/Inter.ttf");
-  font-weight: 400 ;
+  font-weight: 400;
+  src: url('./assets/fonts/inter/Inter-Regular.ttf'); 
 }
 @font-face {
   font-family: 'Inter';
-  src:url("assets/fonts/Inter.ttf");
-  font-weight: 700 ;
+  font-weight: 700;
+  src: url('./assets/fonts/inter/Inter-Regular.ttf');
 }
 @font-face {
   font-family: 'Merriweather', serif;
-  src:url("assets/fonts/Merriweather-Regular.ttf");
   font-weight: 700;
+  src: url('./assets/fonts/merriweather/Merriweather-Regular.ttf');
 }
+
 * {
     box-sizing: border-box;
   }
@@ -25,6 +26,9 @@
 }
 .nav-list {
   list-style: none;
+}
+.nav-link {
+  transition: .3s;
 }
 
  .header-container {
