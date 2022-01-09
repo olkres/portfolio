@@ -13,10 +13,19 @@
   src:url("assets/fonts/Merriweather-Regular.ttf");
   font-weight: 700;
 }
-
- * {
+* {
     box-sizing: border-box;
   }
+.nav-list {
+  display: flex;
+  font-family: Inter;
+  font-weight: 400;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-list {
+  list-style: none;
+}
 
  .header-container {
     background: url('./assets/img/bg.png');
