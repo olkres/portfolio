@@ -19,12 +19,11 @@
   }
 
 /*header start*/
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+body {
+  font-family: Inter;
+  font-weight: 400;
+  color: white;
+  background: black;
 }
 
   .nav-list {
@@ -81,6 +80,8 @@
   }
 
 .logo {
+    position: relative;
+    right: 700px;
     background-image: url('./assets/svg/logo.svg');
     background-size: contain;
     background-repeat: no-repeat;  
@@ -97,10 +98,36 @@
 /*main start*/
 
 .hero-container {
+  display: flex;
   height: 100vh;
   background: url('./assets/img/bg.png');
   background-position: center -90px;
   background-repeat: no-repeat;
+}
+.button {
+  height: 55px;
+  width: 220px;
+}
+.section-hero {
+  position: relative;
+  height: 330px;
+  left: 5.56%;
+  right: 59.72%;
+  top: 250px;
+}
+.h1 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+}
+.hero-text {
+  position: absolute;
+  height: 120px;
+  left: 0%;
+  right: 6%;
+  top: 130px;
 }
 
 /*main end*/
