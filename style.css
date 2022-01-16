@@ -148,11 +148,11 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 40px;
+  text-align: left;
 }
-.section-title {
-background: khaki;
-}
-.section-title::after {
+
+
+/*.section-title::after {
     content: "";
     position: absolute;
     left: 20%;
@@ -169,18 +169,56 @@ background: khaki;
   width: 140px;
   height: 2px;
   background-color: #eaf3eb;
+}*/
+
+.section-title {
+  font-family: "Merriweather";  
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;  
+  text-align: center;  
 }
-.skills-items {
+
+.skills-item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .skill-item {
   background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;  
+  width: 320px;
+  height: 240px;  
 }
 .skill-item:nth-child(1) {
   background-image: url('./assets/svg/camera.svg');
   background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+.skill-item:nth-child(2) {
+  background-image: url('./assets/svg/video.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+.skill-item:nth-child(3) {
+  background-image: url('./assets/svg/image.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+.skill-item:nth-child(4) {
+  background-image: url('./assets/svg/mic.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 
