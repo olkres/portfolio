@@ -151,7 +151,6 @@ body {
   text-align: left;
 }
 
-
 /*.section-title::after {
     content: "";
     position: absolute;
@@ -219,6 +218,39 @@ p {
   text-align: center;
   font-size: 18px;
   line-height: 36px;
+}
+
+.btns {
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-family: Inter;
+  font-weight: 400;
+  color: #BDAE82;
+  font-size: 20px;
+  line-height: 40px;
+  height: 55px;
+  width: 220px;
+  background-color: transparent;
+}
+
+.btns:nth-child(4) {
+  background-color: #BDAE82;
+  color: #000000;
+}
+
+.portfolio-btns {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 60px;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
 }
 
 
