@@ -266,7 +266,24 @@ p {
   height: 130px;
 }
 
+.price-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.price-item {
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 3px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  height: 505px;
+  width: 450px;
+}
 /*main end*/
 /*footer start*/
 
