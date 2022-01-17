@@ -253,6 +253,19 @@ p {
   gap: 25px;
 }
 
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-play {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+}
+
 
 /*main end*/
 /*footer start*/
