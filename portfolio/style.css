@@ -1,9 +1,0 @@
-* {
-    box-sizing: border-box;
-  }
-
-  .header-container {
-    background: url('./assets/img/bg.png');
-    background-repeat: no-repeat;
-    background-position: center 0;
-  }
