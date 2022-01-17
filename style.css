@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: url('./assets/fonts/inter/Inter-Regular.ttf'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  src: url('./assets/fonts/inter/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  src: url('./assets/fonts/merriweather/Merriweather-Regular.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/*header start*/
+body {
+  font-family: Inter;
+  font-weight: 400;
+  color: white;
+  background: black;
+}
+
+  .nav-list {
+  display: flex;
+  font-family: Inter;
+  font-weight: 400;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.switch-lng {
+  display: flex;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  color: white;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+.nav-link {
+  transition: .3s;
+  font-size: 20px;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background: url('./assets/img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+.logo {
+    position: relative;
+    right: 700px;
+    background-image: url('./assets/svg/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;  
+    transition: 0.3s;
+  }
+  
+ .logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+
+/*header end*/
+
+/*main start*/
+
+.hero-container {
+  display: flex;
+  height: 100vh;
+  background: url('./assets/img/bg.png');
+  background-position: center -90px;
+  background-repeat: no-repeat;
+}
+.button {
+  position: relative;
+  top: -30px;
+  height: 55px;
+  width: 220px;
+  background: #BDAE82;
+  border: 0px;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+.hero {
+  position: relative;
+  height: 330px;
+  left: 5.56%;
+  right: 59.72%;
+  top: 120px;
+}
+.hero-title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+.hero-subtitle {
+  position: relative;
+  max-width: 470px;
+  height: 120px;
+  left: 0%;
+  right: 6%;
+  top: -40px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: left;
+}
+
+/*.section-title::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    margin-left: -70px;
+    width: 140px;
+    height: 2px;
+    background-color: #eaf3eb;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 2px;
+  background-color: #eaf3eb;
+}*/
+
+.section-title {
+  font-family: "Merriweather";  
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;  
+  text-align: center;  
+}
+
+.skills-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skill-item {
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;  
+  width: 320px;
+  height: 240px;  
+}
+.skill-item:nth-child(1) {
+  background-image: url('./assets/svg/camera.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+.skill-item:nth-child(2) {
+  background-image: url('./assets/svg/video.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+.skill-item:nth-child(3) {
+  background-image: url('./assets/svg/image.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+.skill-item:nth-child(4) {
+  background-image: url('./assets/svg/mic.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.btns {
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-family: Inter;
+  font-weight: 400;
+  color: #BDAE82;
+  font-size: 20px;
+  line-height: 40px;
+  height: 55px;
+  width: 220px;
+  background-color: transparent;
+}
+
+.btns:nth-child(4) {
+  background-color: #BDAE82;
+  color: #000000;
+}
+
+.portfolio-btns {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 60px;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-play {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+}
+
+.price-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.price-item {
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 3px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  height: 505px;
+  width: 450px;
+}
+/*main end*/
+/*footer start*/
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 182px;
+  height: 50px;
+}
+
+.copyright, .year, .github, .rsschool {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.social {
+  list-style: none;
+}
+
+.social-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.social-item {
+  margin-right: 20px;
+}
