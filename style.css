@@ -22,33 +22,34 @@ html {
     box-sizing: border-box;
   }
 
-/*header start*/
 body {
   font-family: Inter;
   font-weight: 400;
   color: white;
   background: black;
-}
-
-  .nav-list {
-  display: flex;
-  font-family: Inter;
-  font-weight: 400;
-  justify-content: flex-end;
-  align-items: center;
   font-size: 20px;
   line-height: 50px;
+}
+/*header start*/
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 740px;
+}
+
+.switch-lng-ru {
   color: white;
   text-decoration: none;
 }
-
-.switch-lng {
-  display: flex;
-  font-family: Inter;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 50px;
-  color: white;
+.switch-lng-en {
+  color: #BDAE82;
+  text-decoration: none;
+}
+.switch-lng-ru:hover {
+  color: #BDAE82;
+  transition: 0.4s;
 }
 
 .nav-list {
@@ -67,11 +68,16 @@ body {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  color: #BDAE82; 
+  transition: 0.4s;
+}
+
 .header-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     background: url('./assets/img/bg.png');
     background-repeat: no-repeat;
     background-position: center 0;
@@ -84,12 +90,11 @@ body {
   }
 
 .logo {
-    position: relative;
-    right: 700px;
     background-image: url('./assets/svg/logo.svg');
     background-size: contain;
     background-repeat: no-repeat;  
     transition: 0.3s;
+    margin-left: 20px;
   }
   
  .logo:hover {
@@ -102,11 +107,11 @@ body {
 /*main start*/
 
 .hero-container {
-  display: flex;
-  height: 100vh;
+  height: 820px;
   background: url('./assets/img/bg.png');
   background-position: center -90px;
   background-repeat: no-repeat;
+  margin-top: -49.7px
 }
 .button {
   position: relative;
@@ -332,6 +337,10 @@ p {
   background: transparent;
   border: 2px solid #BDAE82;
   margin-bottom: 20px;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 40px;
+  padding-left: 10px;
 }
 
 .contacts-container {
@@ -349,6 +358,10 @@ p {
   background: transparent;
   border: 2px solid #BDAE82;
   margin-bottom: 30px;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 40px;
+  padding-left: 10px;
 
 }
 
