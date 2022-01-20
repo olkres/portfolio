@@ -9,7 +9,7 @@
   src: url('./assets/fonts/inter/Inter-Regular.ttf');
 }
 @font-face {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather';
   font-weight: 700;
   src: url('./assets/fonts/merriweather/Merriweather-Regular.ttf');
 }
@@ -29,6 +29,12 @@ body {
   background: black;
   font-size: 20px;
   line-height: 50px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 1px;
 }
 /*header start*/
 .nav-list {
@@ -83,12 +89,6 @@ body {
     background-position: center 0;
   }
 
-.container {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
 .logo {
     background-image: url('./assets/svg/logo.svg');
     background-size: contain;
@@ -105,34 +105,38 @@ body {
 /*header end*/
 
 /*main start*/
+button {
+  height: 55px;
+  width: 220px;
+  background: #BDAE82;
+  color: #000000;
+  border: 0px;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+button:hover {
+  color: #FFFFFF; 
+  transition: 0.4s;
+  cursor: pointer;
+}
 
 .hero-container {
   height: 820px;
   background: url('./assets/img/bg.png');
   background-position: center -90px;
   background-repeat: no-repeat;
-  margin-top: -49.7px
 }
-.button {
-  position: relative;
-  top: -30px;
-  height: 55px;
-  width: 220px;
-  background: #BDAE82;
-  border: 0px;
-  font-family: Inter;
-  font-size: 20px;
-  line-height: 40px;
-  text-align: center;
-  color: #000000;
-}
+
 .hero {
-  position: relative;
   height: 330px;
-  left: 5.56%;
-  right: 59.72%;
-  top: 120px;
+  width: 500px;
+  padding-top: 160px;
+  padding-left: 80px;
 }
+
 .hero-title {
   font-family: Merriweather;
   font-style: normal;
@@ -141,19 +145,11 @@ body {
   height: 120px;
   margin-bottom: 10px;
 }
+
 .hero-subtitle {
-  position: relative;
-  max-width: 470px;
+  text-align: start;
   height: 120px;
-  left: 0%;
-  right: 6%;
-  top: -40px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 40px;
-  text-align: left;
+  margin-top: -40px;
 }
 
 /*.section-title::after {
@@ -228,15 +224,15 @@ p {
 .btns {
   border: 2px solid #BDAE82;
   box-sizing: border-box;
-  border-radius: 0px;
-  font-family: Inter;
-  font-weight: 400;
   color: #BDAE82;
-  font-size: 20px;
-  line-height: 40px;
-  height: 55px;
-  width: 220px;
   background-color: transparent;
+}
+
+.btns:hover {
+  color: #FFFFFF;
+  background: #BDAE82; 
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 .btns:nth-child(4) {
@@ -288,20 +284,6 @@ p {
   height: 505px;
   width: 450px;
   padding: 0 0 43px;
-}
-
-.price-button {
-  border: 2px solid #BDAE82;
-  box-sizing: border-box;
-  border-radius: 0px;
-  font-family: Inter;
-  font-weight: 400;
-  background: #BDAE82;
-  color: black;
-  font-size: 20px;
-  line-height: 40px;
-  height: 55px;
-  width: 220px;
 }
 
 .price-type {
@@ -379,19 +361,6 @@ p {
   font-size: 20px;
 }
 
-.button-message {
-  border: 2px solid #BDAE82;
-  box-sizing: border-box;
-  border-radius: 0px;
-  font-family: Inter;
-  font-weight: 400;
-  background: #BDAE82;
-  color: black;
-  font-size: 20px;
-  line-height: 40px;
-  height: 55px;
-  width: 220px;
-}
 /*main end*/
 /*footer start*/
 
@@ -416,20 +385,8 @@ p {
 }
 
 .copyright, .year, .github, .rsschool {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 50px;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
-}
-
-.footer-link {
-  text-decoration: none;
-}
-
-.social {
-  list-style: none;
 }
 
 .social-list {
@@ -441,4 +398,16 @@ p {
 
 .social-item {
   margin-right: 20px;
+}
+
+.github:hover,
+.rsschool:hover {
+  color: #BDAE82;
+  transition: 0.4s;
+}
+
+.social-item:hover {
+  filter: invert(26%) sepia(15%) 
+  saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
 }
