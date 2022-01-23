@@ -6,12 +6,12 @@
 @font-face {
   font-family: 'Inter';
   font-weight: 700;
-  src: url('./assets/fonts/inter/Inter-Regular.ttf');
+  src: url('./assets/fonts/inter/Inter-Bold.ttf');
 }
 @font-face {
   font-family: 'Merriweather';
   font-weight: 700;
-  src: url('./assets/fonts/merriweather/Merriweather-Regular.ttf');
+  src: url('./assets/fonts/merriweather/Merriweather-Bold.ttf');
 }
 
 html {
@@ -32,17 +32,20 @@ body {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 1px;
 }
 /*header start*/
+.nav {
+  margin-left: auto;
+}
+
 .nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   text-decoration: none;
-  margin-left: 740px;
 }
 
 .switch-lng-ru {
@@ -80,6 +83,7 @@ body {
 }
 
 .header-container {
+    height: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,11 +119,13 @@ button {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
+  transition: 0.4s;
 }
 
 button:hover {
   color: #FFFFFF; 
   transition: 0.4s;
+  transition-timing-function: linear;
   cursor: pointer;
 }
 
@@ -128,6 +134,7 @@ button:hover {
   background: url('./assets/img/bg.png');
   background-position: center -90px;
   background-repeat: no-repeat;
+  margin-bottom: 100px;
 }
 
 .hero {
@@ -177,14 +184,18 @@ button:hover {
   font-size: 40px;
   line-height: 80px;
   color: #bdae82;  
-  text-align: center;  
+  text-align: center;
+  margin-bottom: 60px;  
 }
 
 .skills-item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: 242px;
+  padding: 0 20px;
 }
+
 .skill-item {
   background-position: center top;
   display: flex;
@@ -192,8 +203,16 @@ button:hover {
   justify-content: flex-end;
   align-items: center;  
   width: 320px;
-  height: 240px;  
+  height: 265px;  
+  padding-bottom: 12px;
 }
+
+.skill {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 5px;
+}
+
 .skill-item:nth-child(1) {
   background-image: url('./assets/svg/camera.svg');
   background-size: 62px 50px;
@@ -367,27 +386,31 @@ p {
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 150px;
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .footer-data {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   width: 182px;
   height: 50px;
+  gap: 20px;
+  margin-left: 20px
 }
 
 .copyright, .year, .github, .rsschool {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.footer-rsschool {
+  display: flex;
+  justify-content: center;
 }
 
 .social-list {
