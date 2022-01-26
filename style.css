@@ -93,6 +93,37 @@ body {
     background-position: center 0;
   }
 
+.header-hamburger {
+  display: none;
+  width: 50px;
+  height: 28px;
+  position: relative;
+}
+
+.burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+}
+
+.burger-line-first {
+  top: 0;
+}
+
+.burger-line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-line-third {
+  bottom: 0;
+}
+
+
+
 .logo {
     background-image: url('./assets/svg/logo.svg');
     background-size: contain;
@@ -438,4 +469,90 @@ p {
   filter: invert(26%) sepia(15%) 
   saturate(638%) hue-rotate(7deg) brightness(92%)
   contrast(87%);
+}
+
+/* media start*/
+
+@media screen and (max-width: 768px) {
+  .header-hamburger {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    width: 620px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .nav-active {
+    transform: translateX(0);
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20%;
+    margin-left: 20%;
+  }
+
+  .nav-link {
+    font-size: 35px;
+    line-height: 73px;
+  }
+
+  .nav-item {
+    margin: 16px 0px;
+  }
+
+  .nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+
+  .nav-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+  }
+
+  .nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .body {
+    margin: 0px;
+  }
+  .video-player {
+    background-image: url( ./assets/img/video-player768.jpg);
+    background-repeat: no-repeat;
+    height: 418px; 
+  }
+  .contacts {
+    background: url( ./assets/img/contacts768.jpg);
+    height: 600px;
+    background-size: cover;
+  }
+  .header-container {
+    background: url(./assets/img/bg768.jpg);
+    background-position: center 0px;
+  }
+  .hero-container {
+    background: url(./assets/img/bg768.jpg);
+    height: 590px;
+    background-position: center -90px;
+    background-repeat: no-repeat;
+  }
 }

@@ -25,11 +25,20 @@
                             <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
                             <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                         </ul>
+                        <div class="nav-close">
+                            <span class="nav-close-line"></span>
+                            <span class="nav-close-line"></span>
+                        </div>
                     </nav>
                     <div class="switch-lng">
                         <a class="switch-lng-en" href="">en</a>
                         <span>/</span>
                         <a class="switch-lng-ru" href="">ru</a>
+                    </div>
+                    <div class="header-hamburger hamburger">
+                        <span class="burger-line burger-line-first"></span>
+                        <span class="burger-line burger-line-second"></span>
+                        <span class="burger-line burger-line-third"></span>
                     </div>
                 </div>
             </div>
@@ -89,11 +98,15 @@
                        <img src="assets/img/portfolio-img6.png" alt="leaf">
                     </div>
                 </section>
-               <section class=".section">
+                <section class=".section">
                    <h2 class="section-title" id="video">Video</h2>
                    <div class="video-player">
-                       <img src="assets/img/video-player.png" alt="video">
-                       <img src="assets/svg/play_hover.svg" class="button-play" alt="button play">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./assets/img/video-player768.jpg">
+                        <source media="(min-width: 769px)" srcset="./assets/img/video-player.png">
+                        <img src="assets/img/video-player.png" alt="video">
+                    </picture>
+                        <img src="assets/svg/play_hover.svg" class="button-play" alt="button play">
                    </div>
                 </section>
                <section class=".section">
