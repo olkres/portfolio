@@ -33,9 +33,10 @@ body {
 
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 1px;
 }
+
 /*header start*/
 .nav {
   margin-left: auto;
@@ -51,10 +52,13 @@ body {
 .switch-lng-ru {
   color: white;
   text-decoration: none;
+  font-weight: 700;
+
 }
 .switch-lng-en {
   color: #BDAE82;
   text-decoration: none;
+  font-weight: 700;
 }
 .switch-lng-ru:hover {
   color: #BDAE82;
@@ -98,12 +102,13 @@ body {
   width: 50px;
   height: 28px;
   position: relative;
+  right: 64px;
 }
 
 .burger-line {
   display: block;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #FFFFFF;
   position: absolute;
   left: 0;
@@ -168,8 +173,7 @@ button:hover {
 }
 
 .hero {
-  height: 330px;
-  width: 500px;
+  width: 34.7%;
   padding-top: 160px;
   padding-left: 80px;
 }
@@ -180,7 +184,7 @@ button:hover {
   font-weight: bold;
   font-size: 60px;
   height: 120px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .hero-subtitle {
@@ -474,6 +478,7 @@ p {
 /* media start*/
 
 @media screen and (max-width: 768px) {
+  
   .header-hamburger {
     display: block;
   }
@@ -556,3 +561,38 @@ p {
     background-repeat: no-repeat;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    background-position-x: right;
+  }
+  .hero-container {
+    text-align: center;
+    background-position-x: right;
+  }
+  .hero {
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 0;
+  }
+  .hero-subtitle {
+    text-align: center;
+  }
+  .header-hamburger {
+    display: block;
+    right: 15px;
+  } 
+  .switch-lng {
+    padding-left: 160px;
+  }
+  .nav-close {
+    right: 200px;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .video-player {
+    width: 100%;
+  }
+}  
