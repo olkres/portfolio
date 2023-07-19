@@ -49,18 +49,23 @@ body {
   text-decoration: none;
 }
 
-.switch-lng-ru {
+.span-lng {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ru {
   color: white;
   text-decoration: none;
-  font-weight: 700;
 
 }
-.switch-lng-en {
+.en {
   color: #BDAE82;
   text-decoration: none;
-  font-weight: 700;
 }
-.switch-lng-ru:hover {
+
+.en:hover,
+.ru:hover {
   color: #BDAE82;
   transition: 0.4s;
 }
@@ -273,21 +278,21 @@ p {
   line-height: 36px;
 }
 
-.btns {
+.portfolio-btn {
   border: 2px solid #BDAE82;
   box-sizing: border-box;
   color: #BDAE82;
   background-color: transparent;
 }
 
-.btns:hover {
+.portfolio-btn:hover {
   color: #FFFFFF;
   background: #BDAE82; 
   transition: 0.4s;
   cursor: pointer;
 }
 
-.btns:nth-child(4) {
+.portfolio-btn:nth-child(4) {
   background-color: #BDAE82;
   color: #000000;
 }
