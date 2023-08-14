@@ -1,4 +1,4 @@
-# Portfolio - project Rolling Scope School
+# Portfolio - project Rolling Scopes School
 ## Task
 #### https://github.com/rolling-scopes-school/tasks/tree/master/tasks/portfolio
 ## Layout
