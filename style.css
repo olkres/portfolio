@@ -445,12 +445,6 @@ p {
   margin-bottom: 40px;
 }
 
-::placeholder {
-  font-family: inherit;
-  color: #bdae82;
-  font-size: 20px;
-}
-
 /*main end*/
 /*footer start*/
 
@@ -496,7 +490,8 @@ p {
 }
 
 .social-item {
-  margin-right: 20px;
+  margin-right: 25px;
+  transition: .5s;
 }
 
 .github:hover,
@@ -509,4 +504,5 @@ p {
   filter: invert(26%) sepia(15%) 
   saturate(638%) hue-rotate(7deg) brightness(92%)
   contrast(87%);
+  transition: .5s;
 }
