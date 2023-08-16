@@ -351,18 +351,16 @@ p {
 .price-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   border: 3px solid #BDAE82;
   box-sizing: border-box;
   border-radius: 0px;
   height: 505px;
   width: 450px;
-  padding: 0 0 43px;
-  margin: 10px 10px; 
 }
 
 .price-type {
+  padding-top: 16px;
   font-family: "Merriweather";  
   font-weight: 700;
   font-size: 28px;
@@ -375,11 +373,22 @@ p {
   color: #BDAE82;
   font-size: 24px;
   line-height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-.contacts
-/*.container*/ {
+.price-description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.contacts {
   background: url('./assets/img/contacts.png');
   background-size: auto 700px;
   background-position: center center;
