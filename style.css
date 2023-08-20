@@ -266,10 +266,10 @@ p {
   cursor: pointer;
 }
 
-.btns:nth-child(4) {
+/* .btns:nth-child(4) {
   background-color: #BDAE82;
   color: #000000;
-}
+} */
 
 .portfolio-btns {
   display: flex;
@@ -284,6 +284,11 @@ p {
   justify-content: space-evenly;
   gap: 25px;
   margin-bottom: 100px;
+}
+
+.portfolio-btn-active {
+  color: #000;
+  background-color: #bdae82;
 }
 
 .video-player {
@@ -517,6 +522,9 @@ p {
 /*ADAPTIVE*/
 
 @media (max-width: 768px) {
+  .body.lock {
+    overflow: hidden;
+  }
   .logo {
     margin: 20px 0 0 40px;
   }

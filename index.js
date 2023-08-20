@@ -1,3 +1,4 @@
+//Бургер меню
 const menu = document.querySelector('.nav')
 const menuBtn = document.querySelector('.burger')
 
@@ -26,3 +27,20 @@ if (menu && menuBtn) {
 		})
 	})
 }
+
+//Смена картинок
+const portfolioBtns = document.querySelector('.portfolio-btns');
+const portfolioItems = document.querySelector('.portfolio-items');
+
+function changeImage(event) {
+  if(event.target.classList.contains('portfolio-btn')) {
+    const portfolioBtnsArr = Array.from(portfolioBtns.children);
+    portfolioBtnsArr.forEach(el => {
+      el.classList.remove('portfolio-btn-active');
+      event.target.classList.add('portfolio-btn-active');
+    })
+    const portfolioImagesArr = Array.from(portfolioItems.children);
+    portfolioImagesArr.forEach((el, index) => el.src = `./assets/img/${event.target.dataset.image}/${index + 1}.jpg`)
+  }
+}
+portfolioBtns.addEventListener('click', changeImage);
