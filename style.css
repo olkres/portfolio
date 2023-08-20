@@ -82,6 +82,10 @@ body {
   transition: 0.4s;
 }
 
+.header__burger {
+  display: none;
+}
+
 .header-container {
     height: 90px;
     display: flex;
@@ -108,6 +112,7 @@ body {
 
   .switch-lng {
     margin: 0 17px 0 13px;
+    font-weight: 700;
   }
 
 /*header end*/
@@ -261,10 +266,10 @@ p {
   cursor: pointer;
 }
 
-.btns:nth-child(4) {
+/* .btns:nth-child(4) {
   background-color: #BDAE82;
   color: #000000;
-}
+} */
 
 .portfolio-btns {
   display: flex;
@@ -279,6 +284,11 @@ p {
   justify-content: space-evenly;
   gap: 25px;
   margin-bottom: 100px;
+}
+
+.portfolio-btn-active {
+  color: #000;
+  background-color: #bdae82;
 }
 
 .video-player {
@@ -505,4 +515,87 @@ p {
   saturate(638%) hue-rotate(7deg) brightness(92%)
   contrast(87%);
   transition: .5s;
+}
+
+/*FOOTER END*/
+
+/*ADAPTIVE*/
+
+@media (max-width: 768px) {
+  .body.lock {
+    overflow: hidden;
+  }
+  .logo {
+    margin: 20px 0 0 40px;
+  }
+  .switch-lng {
+    display: flex;
+    gap: 15px;
+    padding-left: 418px;
+  }
+  .header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 57px;
+    position: relative;
+    width: 60px;
+    height: 39px;
+  }
+  .nav {
+    padding-top: 90px;
+    position: fixed;
+    width: 332px;
+    height: 50%;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .nav.active {
+     transform: translateX(0);
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .line {
+    width: 80%;
+    height: 3px;
+    background: #ffffff;
+    margin: 3px 0;
+    z-index: 15;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header__burger.open .line1 {
+    transform: rotate(-45deg) translate(-12px, 6px);
+  }
+  
+  .header__burger.open .line2 {
+    opacity: 0;
+  }
+  
+  .header__burger.open .line3 {
+    transform: rotate(45deg) translate(-12px, -6px);
+  }
+  .hero {
+    width: 58%;
+    padding-top: 85px;
+    padding-left: 38px;
+  }
+  .hero-title {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .hero-subtitle {
+    padding-top: 0;
+  }
+  .header-container {
+    background-size: cover;
+  }
+  .hero-container {
+    background-size: contain;
+  }
 }
